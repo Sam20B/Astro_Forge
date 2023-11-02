@@ -12,6 +12,9 @@ make = {
 }
 print("Hello and welcome to Samz motors")
 print("What make are you intrested in? ")
+car_list = ['BMW','Mercedes benz','Toyota','Mitsubishi','Mazda','Volks Wagon','Lexus','Nissan','Audi','']
+for item in car_list:
+    print(item)
 #prompts the user to input the model they want to view
 x = str(input())
 if x in make:
