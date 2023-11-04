@@ -8,11 +8,15 @@ make = {
     'Volks Wagon':'out of stock',
     'Lexus':'available',
     'Nissan':'available',
-    'Audi':'available'
+    'Audi':'available',
+    'Honda':'available',
+    'Hyundai':'out of stock',
+    'Subaru':'available',
+    'Chevrolet':'available'
 }
 print("Hello and welcome to Samz motors")
 print("What make are you intrested in? ")
-car_list = ['BMW','Mercedes benz','Toyota','Mitsubishi','Mazda','Volks Wagon','Lexus','Nissan','Audi','']
+car_list = ['BMW','Mercedes benz','Toyota','Mitsubishi','Mazda','Volks Wagon','Lexus','Nissan','Audi','Honda','Hyundai','Subaru','Chevrolet','']
 for item in car_list:
     print(item)
 #prompts the user to input the model they want to view
@@ -35,7 +39,7 @@ if x == 'BMW':
     #if the color entered is in the list the user can proceed to view the cars available
     if y in BMW:
         if y == 'black':
-            print("The " + x +" cars available in black are: ")
+            print("The " + x +" cars available in black are:")
             black_bmw_list = ['BMW 3 series','BMW 7 series','BMW X2','BMW X5','BMW X7']
             for item in black_bmw_list:
                 print(item)
@@ -69,7 +73,7 @@ if x == 'Mercedes benz':
     #if the color entered is in the list the user can proceed to view the cars available
     if y in Mercedes_benz:
         if y == 'black':
-            print("The " + x +" cars available in black are: ")
+            print("The " + x +" cars available in black are:")
             black_benz_list = ['Mercedes-Benz A-class','Mercedes-Benz S-class','Mercedes-Benz B-class','Mercedes-Benz SL','Mercedes-Benz GLS','Mercedes-Benz G-class','Mercedes-Benz GT63','Mercedes-Benz Infinity']
             for item in black_benz_list:
                 print(item)
@@ -103,7 +107,7 @@ if x == 'Toyota':
     #if the color entered is in the list the user can proceed to view the cars available
     if y in Toyota:
         if y == 'black':
-            print("The " + x + " cars available in black are: ")
+            print("The " + x + " cars available in black are:")
             black_toyota_list = ['Toyota Sienna','Toyota Tacoma','Toyota Land Cruiser','Toyota Supra','Toyota 4Runner','Toyota Supra','Toyota Corolla']
             for item in black_toyota_list:
                 print(item)
@@ -132,7 +136,7 @@ if x == 'Mitsubishi':
     #if the color entered is in the list the user can proceed to view the cars available
     if y in Mitsubishi:
         if y == 'black':
-            print("The " + x + " cars available in black are: ")
+            print("The " + x + " cars available in black are:")
             black_mitsubishi_list = ['Mitsubishi Outlander','Mitsubishi Lancer','Mitsubishi Outlander Sport']
             for item in black_mitsubishi_list:
                 print(item)
@@ -175,7 +179,7 @@ if x == 'Nissan':
     #if the color entered is in the list the user can proceed to view the cars available
     if y in Nissan:
         if y == 'black':
-            print("The " + x + " cars available in black are: ")
+            print("The " + x + " cars available in black are:")
             black_nissan_list = ['Nissan altima','Nissan pathfinder','Nissan GT-R']
             for item in black_nissan_list:
                 print(item)
@@ -194,7 +198,7 @@ if x == 'Audi':
     #if the color entered is in the list the user can proceed to view the cars available
     if y in Audi:
         if y == 'black':
-            print("The " + x + " cars available in black are: ")
+            print("The " + x + " cars available in black are:")
             black_audi_list = ['Audi A3','Audi A4','Audi A5','Audi A6','Audi A7','Audi A7','Audi Q2','Audi Q3']
             for item in black_audi_list:
                 print(item)
@@ -210,5 +214,82 @@ if x == 'Audi':
                 print(item)
     #if the color is not available the user can enter another color or view other models with the color they entered
     if y not in Audi:
+        print("The color you entered is not available at the moment")
+        print("You can enter another color or view other makes or view other makes available in that color")
+#list containing the colors the model is available in
+Honda = ['black','white','red','blue']
+if x == 'Honda':
+    #if the color entered is in the list the user can proceed to view the cars available
+    if y in Honda:
+        if y == 'black':
+            print("The " + x + " cars available in black are:")
+            black_honda_list = ['Honda Civic','Honda Accord','Honda HR-V','Honda CR-V','Honda Passport','Honda Pilot','Honda Odyssey','Honda Ridgeline','Honda Insight']
+            for item in black_honda_list:
+                print(item)
+        if y == 'white':
+            print("The " + x + " cars availablein blue are: ")
+            blue_honda_list = ['Honda Civic','Honda Accord','Honda HR-V','Honda CR-V','Honda Passport','Honda Pilot','Honda Odyssey','Honda Ridgeline','Honda Insight']
+            for item in blue_honda_list:
+                print(item)
+        if y == 'red':
+            print("The " + x + " cars available in maroon are: ")
+            maroon_honda_list = ['Honda Civic','Honda Accord','Honda HR-V','Honda CR-V','Honda Pilot','Honda Ridgeline','Honda Insight']
+            for item in maroon_honda_list:
+                print(item)
+        if y == 'blue':
+            print("The " + x + " cars available in maroon are: ")
+            maroon_honda_list = ['Honda Civic','Honda Accord','Honda HR-V','Honda CR-V','Honda Pilot','Honda Ridgeline','Honda Insight','Honda Fit']
+            for item in maroon_honda_list:
+                print(item)
+    #if the color is not available the user can enter another color or view other models with the color they entered
+    if y not in Nissan:
+        print("The color you entered is not available at the moment")
+        print("You can enter another color or view other makes or view other makes available in that color")
+#list containing the colors the model is available in
+Subaru = ['black','white','blue']
+if x == 'Subaru':
+    #if the color entered is in the list the user can proceed to view the cars available
+    if y in Subaru:
+        if y == 'black':
+            print("The " + x + " cars available in black are:")
+            black_subaru_list = ['Subaru Impreza','Subaru Legacy','Subaru WRX','Subaru BRZ','Subaru Crosstrek','Subaru Forester']
+            for item in black_subaru_list:
+                print(item)
+        if y == 'white':
+            print("The " + x + " cars availablein blue are: ")
+            blue_subaru_list = ['Subaru Impreza','Subaru Legacy','Subaru WRX','Subaru BRZ','Subaru Crosstrek','Subaru Forester','Subaru Outback']
+            for item in blue_subaru_list:
+                print(item)
+        if y == 'blue':
+            print("The " + x + " cars available in maroon are: ")
+            maroon_subaru_list = ['Subaru Impreza','Subaru Legacy','Subaru WRX','Subaru BRZ','Subaru Forester']
+            for item in maroon_subaru_list:
+                print(item)
+    #if the color is not available the user can enter another color or view other models with the color they entered
+    if y not in Nissan:
+        print("The color you entered is not available at the moment")
+        print("You can enter another color or view other makes or view other makes available in that color")
+#list containing the colors the model is available in
+Chevrolet = ['black','white','silver']
+if x == 'Chevrolet':
+    #if the color entered is in the list the user can proceed to view the cars available
+    if y in Chevrolet:
+        if y == 'black':
+            print("The " + x + " cars available in black are:")
+            black_chevrolet_list = ['Chevrolet Spark','Chevrolet Sonic','Chevrolet Malibu','Chevrolet Camaro','Chevrolet Corvette','Chevrolet Silverado','Chevrolet Colorado']
+            for item in black_chevrolet_list:
+                print(item)
+        if y == 'white':
+            print("The " + x + " cars availablein blue are: ")
+            blue_chevrolet_list = ['Chevrolet Spark','Chevrolet Sonic','Chevrolet Malibu','Chevrolet Camaro','Chevrolet Corvette','Chevrolet Silverado','Chevrolet Colorado']
+            for item in blue_chevrolet_list:
+                print(item)
+        if y == 'silver':
+            print("The " + x + " cars available in maroon are: ")
+            maroon_chevrolet_list = ['Chevrolet Spark','Chevrolet Sonic','Chevrolet Camaro','Chevrolet Corvette','Chevrolet Silverado','Chevrolet Colorado']
+            for item in maroon_chevrolet_list:
+                print(item)
+    #if the color is not available the user can enter another color or view other models with the color they entered
+    if y not in Nissan:
         print("The color you entered is not available at the moment")
         print("You can enter another color or view other makes or view other makes available in that color")
