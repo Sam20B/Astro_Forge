@@ -5,7 +5,7 @@ tip = int(input())
 
 shillings = shillings - tip
 
-tax = int(shillings * 16 / 100)
+tax = int(shillings * 8 / 100)
 print("Tax: ",tax)
 shillings = shillings - tax
 
