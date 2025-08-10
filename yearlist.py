@@ -1,0 +1,7 @@
+print("Enter the first year ")
+yearone=int(input())
+print("Enter the last year ")
+yeartwo=int(input())
+year_range=range(yearone,yeartwo+1,1)
+year_list=list(year_range)
+print(year_list)
